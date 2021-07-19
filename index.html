@@ -15,6 +15,7 @@
   </head>
   <body>
     <header>
+      <!-- navigation -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button
@@ -29,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#banner"
+            <a class="navbar-brand" href="#banner "
               ><b><h2>Movie Time</h2></b></a
             >
             <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
@@ -65,6 +66,60 @@
           </div>
         </div>
       </nav>
+      <!-- banner images -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="row carousel-item active">
+            <div class="col-lg-8 mx-auto">
+              <img
+                src="images/banner/image1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-lg-8 mx-auto">
+              <img
+                src="images/banner/image2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-lg-8 mx-auto">
+              <img
+                src="images/banner/image3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <section></section>
     </header>
     <!-- bootstrap javascript script -->
