@@ -1,0 +1,59 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+.movie-quality {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  font-weight: bolder;
+  background-color: rgb(255, 0, 119);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  z-index: 3;
+}
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.tinted-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, transparent, rgb(0, 0, 0));
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-details {
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+  z-index: 3;
+}
+.title {
+  color: white;
+}
+.fas,
+.far {
+  color: gold;
+}
+.play-button {
+  color: rgb(255, 0, 119);
+  font-size: 8vw;
+  z-index: 3;
+  visibility: hidden;
+}
+.movie-card:hover .play-button {
+  visibility: visible;
+}
