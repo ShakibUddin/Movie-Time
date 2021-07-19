@@ -1,3 +1,6 @@
+nav {
+  z-index: 4;
+}
 .movie-card {
   display: flex;
   flex-direction: column;
