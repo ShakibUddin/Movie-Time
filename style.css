@@ -1,5 +1,5 @@
 nav {
-  z-index: 4;
+  z-index: 3;
 }
 .movie-card {
   display: flex;
@@ -59,4 +59,20 @@ nav {
 }
 .movie-card:hover .play-button {
   visibility: visible;
+}
+
+.movietime-logo {
+  width: 100px;
+  height: 70px;
+}
+.social-links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.fab {
+  font-size: 1.5rem;
+  border: 1px solid var(--primary-color);
 }
