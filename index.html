@@ -7,6 +7,7 @@
     <title>Movie Time</title>
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
     <!-- fontawesome kit link -->
     <script
       src="https://kit.fontawesome.com/2415ace42b.js"
@@ -20,10 +21,13 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: black">
     <header class="pb-5">
       <!-- navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-dark fixed-top"
+        style="background-color: black !important"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -38,12 +42,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" href="#banner "
-              ><h2 class="fw-bolder">Movie Time</h2></a
+              ><h2 class="fw-bolder text-light">Movie Time</h2></a
             >
             <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
                 <a
-                  class="nav-link text-dark fw-bold"
+                  class="nav-link text-primary fw-bold"
                   aria-current="page"
                   href="#banner"
                   >Home</a
@@ -51,7 +55,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark fw-bold"
+                  class="nav-link dropdown-toggle text-primary fw-bold"
                   data-bs-toggle="dropdown"
                   href="#"
                   role="button"
@@ -74,12 +78,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#feedback"
+                <a class="nav-link text-primary fw-bold" href="#feedback"
                   >FeedBack</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#subscribe"
+                <a class="nav-link text-primary fw-bold" href="#subscribe"
                   >Subscribe</a
                 >
               </li>
@@ -99,7 +103,7 @@
         </div>
       </nav>
       <!-- banner images -->
-      <div class="container-xl" id="banner">
+      <div class="container-xxl mt-5" id="banner">
         <div
           id="carouselExampleSlidesOnly"
           class="carousel slide w-100"
@@ -112,6 +116,15 @@
                 class="d-block w-100"
                 alt="..."
               />
+              <div class="card-details poster-details-card">
+                <p class="title text-light fw-bolder">A Quiet Place II</p>
+                <p class="text-light">
+                  Following the deadly events at home, the Abbott family must
+                  now face the terrors of the outside world as they continue
+                  their fight for survival in silence.
+                </p>
+                <button type="button" class="watch-button">Watch</button>
+              </div>
             </div>
             <div class="row carousel-item">
               <img
@@ -119,6 +132,16 @@
                 class="d-block w-100"
                 alt="..."
               />
+              <div class="card-details poster-details-card">
+                <p class="title text-light fw-bolder">The Tomorrow War</p>
+                <p class="text-light">
+                  The world is stunned when a group of time travellers arrive
+                  from the year 2051 to deliver an urgent message: thirty years
+                  in the future, mankind is losing a global war against a deadly
+                  alien species.
+                </p>
+                <button type="button" class="watch-button">Watch</button>
+              </div>
             </div>
             <div class="row carousel-item">
               <img
@@ -126,6 +149,15 @@
                 class="d-block w-100"
                 alt="..."
               />
+              <div class="card-details poster-details-card">
+                <p class="title text-light fw-bolder">Loki</p>
+                <p class="text-light">
+                  Loki, the God of Mischief, steps out of his brother's shadow
+                  to embark on an adventure that takes place after the events of
+                  "Avengers: Endgame."
+                </p>
+                <button type="button" class="watch-button">Watch</button>
+              </div>
             </div>
           </div>
         </div>
@@ -133,35 +165,8 @@
     </header>
     <!-- main content -->
     <main id="movies">
-      <!-- movies categories section -->
-      <section>
-        <div class="container overflow-hidden">
-          <div class="row gx-2 gy-2">
-            <div class="col-lg-3 col-md-6 col-4">
-              <div class="p-2 border bg-primary">
-                <h5 class="fw-bolder text-light text-center">Action</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-4">
-              <div class="p-2 border bg-success">
-                <h5 class="fw-bolder text-light text-center">Horror</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-4">
-              <div class="p-2 border bg-warning">
-                <h5 class="fw-bolder text-light text-center">Animated</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="p-2 border bg-info">
-                <h5 class="fw-bolder text-light text-center">TV Series</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- action movies section -->
-      <h2 class="text-dark fw-bolder text-center mt-5">Action Movies</h2>
+      <h2 class="text-primary fw-bolder text-center mt-5">Action Movies</h2>
       <section
         id="action-movies"
         class="d-flex justify-content-center p-5 pt-1"
@@ -268,7 +273,7 @@
         </div>
       </section>
       <!-- horror movies section -->
-      <h2 class="text-dark fw-bolder text-center mt-5">Horror Movies</h2>
+      <h2 class="text-primary fw-bolder text-center mt-5">Horror Movies</h2>
       <section
         id="horror-movies"
         class="d-flex justify-content-center p-5 pt-1"
@@ -375,7 +380,7 @@
         </div>
       </section>
       <!-- animated movies section -->
-      <h2 class="text-dark fw-bolder text-center mt-5">Animated Movies</h2>
+      <h2 class="text-primary fw-bolder text-center mt-5">Animated Movies</h2>
       <section
         id="animated-movies"
         class="d-flex justify-content-center p-5 pt-1"
@@ -482,7 +487,7 @@
         </div>
       </section>
       <!-- series section -->
-      <h2 class="text-dark fw-bolder text-center mt-5">TV Series</h2>
+      <h2 class="text-primary fw-bolder text-center mt-5">TV Series</h2>
       <section id="series" class="d-flex justify-content-center p-5 pt-1">
         <div
           class="row row-cols-1 row-cols-md-3 g-4 justify-content-center w-100"
@@ -588,9 +593,9 @@
     </main>
     <!-- feedback section -->
     <section id="feedback" class="container p-5">
-      <h2 class="py-2">We Value Your Opinion</h2>
+      <h2 class="py-2 text-primary">We Value Your Opinion</h2>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
+        <label for="exampleFormControlInput1" class="form-label text-primary"
           >Email address</label
         >
         <input
@@ -601,7 +606,7 @@
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
+        <label for="exampleFormControlTextarea1" class="form-label text-primary"
           >Your Feedback</label
         >
         <textarea
@@ -614,10 +619,10 @@
     </section>
     <!-- subsribe section -->
     <section id="subscribe" class="container p-5">
-      <h2 class="py-2">
+      <h4 class="py-2 text-primary">
         Subscribe to the MovieTime mailing list to receive updates on movies,
         tv-series and news of top movies.
-      </h2>
+      </h4>
       <form class="row g-3">
         <div class="col-auto">
           <input
@@ -638,7 +643,7 @@
         <i class="fab fa-youtube"></i>
         <i class="fab fa-snapchat-square"></i>
       </div>
-      <p class="text-dark text-center p-5">
+      <p class="text-primary text-center p-5">
         Copyright © 2021 MovieTime. Developed by Md Shakib Uddin Bhuiyan.
       </p>
     </footer>
